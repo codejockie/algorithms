@@ -1,18 +1,15 @@
 class LinkedList
 {
-  /**
-   * Definition for singly-linked list.
-   * public class ListNode {
-   *     public int val;
-   *     public ListNode next;
-   *     public ListNode(int x) => val = x;
-   * }
-   */
+  public class ListNode
+  {
+    public int val;
+    public ListNode next;
+    public ListNode(int x) => val = x;
+  }
 
   public static int[] StringToIntegerArray(string input)
   {
-    input = input.Trim();
-    input = input.Substring(1, input.Length - 2);
+    input = input.Trim().Substring(1, input.Length - 2);
     if (input.Length == 0)
     {
       return new int[0];
